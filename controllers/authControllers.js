@@ -29,7 +29,7 @@ const login = async (req, res) => {
     process.env.ACCESS_TOKEN_SECRET,
     { expiresIn: "1h" }
   );
-  return res.status(200).json({ accessToken });
+  return res.status(200).json({ accessToken,username });
 };
 
 const register = async (req, res) => {
